@@ -1,3 +1,31 @@
+/* ===== Theme Variables ===== */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --primary-color: #00adb5;
+    --nav-bg: #222;
+    --card-bg: #ffffff;
+}
+
+/* Dark Theme */
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #00adb5;
+    --nav-bg: #000;
+    --card-bg: #1e1e1e;
+}
+
+/* Green Theme */
+body.green {
+    --bg-color: #f0fff4;
+    --text-color: #1b4332;
+    --primary-color: #2d6a4f;
+    --nav-bg: #1b4332;
+    --card-bg: #ffffff;
+}
+
+/* ===== Global Styles ===== */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +34,13 @@
 }
 
 body {
-    background: #f4f4f4;
-    color: #333;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* Navbar */
 nav {
-    background: #222;
+    background: var(--nav-bg);
     color: white;
     padding: 15px 40px;
     display: flex;
@@ -35,7 +63,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00adb5;
+    color: var(--primary-color);
+}
+
+/* Theme Buttons */
+.theme-buttons button {
+    margin-left: 10px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 /* Sections */
@@ -46,13 +83,13 @@ section {
 
 h1 {
     margin-bottom: 20px;
-    color: #00adb5;
+    color: var(--primary-color);
 }
 
 /* Skills */
 .skills-container span {
     display: inline-block;
-    background: #00adb5;
+    background: var(--primary-color);
     color: white;
     padding: 10px 15px;
     margin: 5px;
@@ -61,7 +98,7 @@ h1 {
 
 /* Projects */
 .project-card {
-    background: white;
+    background: var(--card-bg);
     padding: 20px;
     margin: 15px auto;
     width: 60%;
@@ -84,20 +121,32 @@ form input, form textarea {
 form button {
     padding: 10px;
     width: 100%;
-    background: #00adb5;
+    background: var(--primary-color);
     border: none;
     color: white;
     cursor: pointer;
 }
 
-form button:hover {
-    background: #007b80;
-}
-
-/* Footer */
 footer {
-    background: #222;
+    background: var(--nav-bg);
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+
+/* Resume Download Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: darken(var(--primary-color), 10%);
 }
