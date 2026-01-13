@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>
+            Hello! I'm Rushikesh Kadam, a Computer Science student passionate about web development,
+            AI, and building real-world applications.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>SQL</span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio built using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Countryside Awareness</h3>
+            <p>A quiz app for awareness in countryside <br>
+               along with related reading articles and <br>
+               youtube videos</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Clinic Management System</h3>
+            <p>A simple app for manging operations in a medical clinic <br>
+               Operations handeled like patient registration, appointment <br>
+               booking and many more operated</p>
+        </div>
+
+         <div class="project-card">
+            <h3>Golden Estate Management</h3>
+            <p>A simple app for manging operations in a real estate services <br>
+               Deals like buying and selling are handeled</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
